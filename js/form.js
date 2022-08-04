@@ -1,4 +1,4 @@
-
+        //uc1
         const text=document.querySelector('#Name');
         const error=document.querySelector('.error');
         text.addEventListener('input',function()
@@ -14,6 +14,20 @@
 
             }
 
+        });
+        //uc2
+        const email=document.querySelector('#Email')
+        const error_email=document.querySelector('.error-email')
+        email.addEventListener('input',function()
+        {
+            let emailRegex=RegExp("^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$");
+            if(emailRegex.test(email.value))
+            {
+                error_email.textContent="";
+            }
+            else{
+                error_email.textContent="email is invalid"
+            }
         });
         
     
