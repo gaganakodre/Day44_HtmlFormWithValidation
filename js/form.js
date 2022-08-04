@@ -56,6 +56,23 @@
                 teleNumber_error.innerHTML="telephoneNumber is invalid"
             }
         });
+        //uc4-5
+        const pwd=document.querySelector('#Password');
+        const pwd_error=document.querySelector('.error-pwd');
+        pwd.addEventListener('input',function()
+        {
+            let pwdRegex=RegExp("^.*(?=.{8,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!*@#$%^&+=]).*$");
+            if(pwdRegex.test(pwd.value))
+            {
+                pwd_error.innerHTML="";
+            }
+            else
+            {
+                pwd_error.innerHTML="Password is Invalid";
+
+            }
+
+        });
         
     
         
