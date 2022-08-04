@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/form.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width,initial-scale-1.0">
+    <title>Form</title>
+</head>
+<body>
+    <header class="headerContainer">Header-Sample</header>
+    <form>
+        <div>
+            <lable class="requiredfield">*</lable>
+            <label for="Name">text box for Name:</label>
+            <input type="text" id="Name" required>
+            <error-input class="error"></error-input>
+        </div>
+        <div>
+            <lable class="requiredfield">*</lable>
+            <label for="Password">text box for Password:</label>
+            <input type="password" id="Password" required>
+            <pwderror-input class="error-pwd"></pwderror-input>
+        </div>
+        <div>
+            <lable class="requiredfield">*</lable>
+            <label for="Email">text box for Email:</label>
+            <input type="email" id="Email" required>
+            <emailerror-input class="error-email"></emailerror-input>
+        </div>
+        <div>
+            <label for="Url">text box for Url:</label>
+            <input type="url" id="Url" required>
+        </div>
+        <div>
+            <lable class="requiredfield">*</lable>
+            <label for="Number">text box for Number:</label>
+            <input type="number" id="Number" required>
+            <numbererror-input class="error-number"></numbererror-input>
+        </div>
+        <div>
+            <lable class="requiredfield">*</lable>
+            <label for="Telephone">text box for Telephone:</label>
+            <input type="tel" id="Telephone" required>
+            <numbererror-input class="error-telephone"></numbererror-input>
+        </div>
+        <div>
+            <label for="Search">text box for Search:</label>
+            <input type="search" id="Search">
+        </div>
+        <div>
+            <label for="DateTime">text box for DateTime:</label>
+            <input type="datetime-local" id="DateTime">
+        </div>
+        <div>
+            <label for="Salary">text box for salary</label>
+            <input type="range" min="30000" max="50000" step="1000"value="30000" id="Salary" required>
+            <salary-output class="salary-output">50000</salary-output>
+        </div>
+        
+        <input type="submit" value="Submit" class="submitbutton">
+    </form>
+    <script src="../js/form.js">
+        
+    </script>
+        
+</body>
+</html>

@@ -1,0 +1,64 @@
+.headerContainer{
+    align-content: center;
+    padding: 10px;
+    background-color: crimson;
+    display: flex;
+    flex-flow: column wrap;
+    font-weight: bold;
+}
+html,input{
+    font-family: sans-serif;
+    margin-left: 15px;
+}
+body{
+    width:100%;
+    max-width: 600px;
+    margin: 0px auto;
+    padding: 2em;
+}
+form{
+    margin-top: 30px;
+}
+div{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+label{
+    width: 40%;
+}
+.submitbutton{
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 60%;
+    margin: 0px auto;
+    margin-left: 40px;
+}
+input{
+    width: 50%;
+}
+.requiredfield
+{
+    color: red;
+    
+    
+}
+
+.error
+{
+    color: brown;
+}
+@media only screen and (max-width: 600px) {
+    label
+    {
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .MainContainer
+    {
+        max-width: 800px;
+    }
+}
+    
