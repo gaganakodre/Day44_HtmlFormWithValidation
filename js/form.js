@@ -73,6 +73,14 @@
             }
 
         });
+        //uc6-salary
+        var salaryInput=document.querySelector('#Salary')
+        var salaryerror=document.querySelector('.salary-output');
+        salaryerror.textContent=salaryInput.value;
+        salaryInput.addEventListener('input',function()
+        {
+            salaryerror.textContent=salaryInput.value;
+        });
         
     
         
